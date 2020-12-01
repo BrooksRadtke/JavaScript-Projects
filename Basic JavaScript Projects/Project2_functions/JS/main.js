@@ -14,3 +14,9 @@ function addStrings()
     sentence += " so much from this JavaScript course with the Tech Academy!";
     document.getElementById("Concatenate").innerHTML = sentence;
 }
+
+function changeTextColor()
+{
+    var x = document.getElementById("Concatenate");
+    x.style.color = "red";
+}
