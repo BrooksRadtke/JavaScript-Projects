@@ -18,3 +18,8 @@
 //document.write(dwarfs);
 
 //document.write(3+3);
+
+function displayDate()
+{
+    document.getElementById("demo").innerHTML = Date();
+}
