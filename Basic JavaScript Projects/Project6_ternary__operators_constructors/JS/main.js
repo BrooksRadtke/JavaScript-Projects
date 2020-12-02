@@ -38,12 +38,12 @@ function Location(Planet, Continent, Country, State)
     this.Location_Country = Country;
     this.Location_State = State;
 }
-var Brooks = new Location("Earth", "North America", "US", "Oregon")
+var Joan = new Location("Earth", "North America", "US", "Oregon")
 function WhereAmI()
 {
     document.getElementById("New_and_This").innerHTML = 
-    "Why, you're on planet " + Brooks.Location_Planet + " in the continent of "
-    + Brooks.Location_Continent + " in " + Brooks.Location_State + " , " + Brooks.Location_Country;
+    "Why, you're on planet " + Joan.Location_Planet + " in the continent of "
+    + Joan.Location_Continent + " in " + Joan.Location_State + " , " + Joan.Location_Country;
 }
 
 function Countdown()
