@@ -13,13 +13,13 @@ function Vote()
     canVote = (Age < 18) ? "Sorry, please wait a few years" : "It's time"
     document.getElementById("Vote").innerHTML = canVote + " to vote."
 }
-
+//Same Section
 function CarInfo(Make, Model, Year, Color)
 {
-    this.CarInfo_Make;
-    this.CarInfo_Model;
-    this.CarInfo_Year;
-    this.CarInfo_Color;
+    this.CarInfo_Make = Make;
+    this.CarInfo_Model = Model;
+    this.CarInfo_Year = Year;
+    this.CarInfo_Color = Color;
 }
 var Brooks = new CarInfo("Hyundai", "Elantra", 2015, "Silver");
 function WhatDoIDrive()
@@ -27,4 +27,36 @@ function WhatDoIDrive()
     document.getElementById("Keywords_and_Constructors").innerHTML = 
     "Brooks drives a " + Brooks.CarInfo_Color + " " + Brooks.CarInfo_Make 
     + " " + Brooks.CarInfo_Model + " from " + Brooks.CarInfo_Year;
+}
+//End Same Section^^
+
+//If trying to assign a variable to a standard keyword, code does not run
+function Location(Planet, Continent, Country, State)
+{
+    this.Location_Planet = Planet;
+    this.Location_Continent = Continent;
+    this.Location_Country = Country;
+    this.Location_State = State;
+}
+var Brooks = new Location("Earth", "North America", "US", "Oregon")
+function WhereAmI()
+{
+    document.getElementById("New_and_This").innerHTML = 
+    "Why, you're on planet " + Brooks.Location_Planet + " in the continent of "
+    + Brooks.Location_Continent + " in " + Brooks.Location_State + " , " + Brooks.Location_Country;
+}
+
+function Countdown()
+{
+    document.getElementById("Countdown").innerHTML = Count();
+    function Count()
+    {
+        var StartingNum = 10;
+        function MinusOne() 
+        {
+            StartingNum -= 1;
+        }
+        MinusOne();
+        return StartingNum;
+    }
 }
