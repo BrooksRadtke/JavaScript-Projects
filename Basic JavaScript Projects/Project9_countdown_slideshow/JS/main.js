@@ -27,13 +27,13 @@ function plusSlides(n)
 //Thumbnail image controls
 function currentSlide(n)
 {
-    showSlide(slideIndex = n);
+    showSlides(slideIndex = n);
 }
 
 function showSlides(n)
 {
     var i;
-    var slides = document.getElementById("mySLides");
+    var slides = document.getElementsByClassName("mySlides");
     var dots = document.getElementById("dot");
     if(n > slides.length) 
     {
@@ -49,7 +49,7 @@ function showSlides(n)
     }
     for(i = 0; i < dots.length; i++)
     {
-        dots[i].className = dots[i].classname.replace(" active", "");
+        dots[i].className.replace(" active", "");
     }
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
