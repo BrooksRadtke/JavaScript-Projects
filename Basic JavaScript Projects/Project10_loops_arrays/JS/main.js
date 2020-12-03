@@ -1,4 +1,4 @@
-function Call_Loop()
+function Call_Loop()            //Use of while loop
 {
     var Digit = "";
     var x = 1;
@@ -17,7 +17,7 @@ function CharLength()           //challenge, step 180
     document.getElementById("CharLength").innerHTML = n;
 }
 
-function for_loop()
+function for_loop()             //Use of for loop
 {
     var cars = ["BMW", "Volvo", "Ford", "Saab", "Audi"]
     var text = "";
@@ -29,7 +29,7 @@ function for_loop()
     document.getElementById("for_loop").innerHTML = text;
 }
 
-function array_method()
+function array_method()         //Use of array
 {
     var car = [];
     car [0] = "BMW";
@@ -49,7 +49,7 @@ function constant_function()
     " this year, but it turns out a " + christmas_tree.brand + " runs " + christmas_tree.cost + "??";
 }
 
-function let_function_1()
+function let_function_1()       //Use of let
 {
     var x = "red";
     document.write(x);
@@ -83,9 +83,41 @@ let phone =
     manufacturer: "Apple",
     device: "iPhone 5",
     year: "2008",
-    description: ProductDescription()
+    description: function ProductDescription()
     {
         return "This mobile device is an " + this.device + " from " + this.manufacturer +
         " from " + this.year;}   
 };
-document.getElementById("phoneInformation").innerHTML = phone.ProductDescription();
+document.getElementById("phoneInformation").innerHTML = phone.description();    //call the property if contains method
+
+//Break example
+function breakItUp()
+{
+    var text = "";
+var i;
+for (i = 0; i < 10; i++) 
+{
+  if (i === 3) 
+    { 
+      break; 
+    }
+    text += "The number is " + i + "<br>";
+}
+document.getElementById("breakItUp").innerHTML = text;
+}
+
+//continue example
+function carryOn()
+{
+    var text = "";
+    var i;
+    for (i = 0; i < 10; i++) 
+    {
+        if (i === 3) 
+        { 
+            continue; 
+        }
+        text += "The number is " + i + "<br>";
+    }  
+document.getElementById("carryOn").innerHTML = text;
+}
