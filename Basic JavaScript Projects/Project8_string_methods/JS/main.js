@@ -1,3 +1,11 @@
+function Concat()
+{
+    var str1 = "Sorry";
+    var str2 = " I forgot to add this method in my first submission...";
+    var res = str1.concat(str2);
+    document.getElementById("Concatenate").innerHTML = res;
+}
+
 function SliceMethod()
 {
     var Sentence = "Tis the season to be jolly!";
