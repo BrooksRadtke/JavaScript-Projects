@@ -68,7 +68,7 @@ function placeXorO(squareNumber)
         while(!success)
         {
             //select random number 0 - 8
-            pickASquare = String(Math.floor(Math.random() - 9));
+            pickASquare = String(Math.floor(Math.random() * 9));
             //if random number evaluates number returns true, square has not been selected
             if(placeXorO(pickASquare))
             {
@@ -118,7 +118,7 @@ function checkWinConditions()   //***WHY ISN'T THIS A SWITCH STATEMENT???***
     //x 6,4,2 condition
     else if(arrayIncludes('6x','4x', '2x'))
     {
-        drawWinLine(100, 508, 100, 90);
+        drawWinLine(100, 508, 510, 90);
     }
     //x 0,4,8 condition
     else if(arrayIncludes('0x','4x', '8x'))
