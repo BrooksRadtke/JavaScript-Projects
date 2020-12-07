@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="" defer></script>
+        <link rel="stylesheet" type="text/css" href="">
+    </head>
+    <body>
+        <p id="arrowFunction"></p>
+        <!-- Example 1 -->
+        <!--<script>
+            document.getElementById("arrowFunction").innerHTML = 
+            "Hello Javascript!";
+        </script>-->
+
+        <!-- ArrowFunction Example -->
+        <script>
+            var hello;
+            hello = () => 
+            {
+                return "Hello JavaScript!";
+            }
+            document.getElementById("arrowFunction").innerHTML = hello();
+        </script>
+    </body>
+</html>
