@@ -136,6 +136,6 @@ keys.addEventListener('click', (event) =>
         return;
     }
 
-    Input_Digit(target.name);
+    Input_Digit(target.value);
     Update_Display();
 })
