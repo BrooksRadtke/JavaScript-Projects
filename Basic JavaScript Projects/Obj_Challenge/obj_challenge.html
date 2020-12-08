@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <p>Click the button to create a comment on the page!</p>
+    <button onclick="isComment()">Comment now!</button>
+
+    <p id="comment"></p>
+    <body>
+        <script>
+            function isComment() 
+            {
+                var c = document.createComment("Just silly comments");
+                document.body.appendChild(c);
+                var x = document.getElementById("comment");
+                x.innerHTML = "Thank you for commenting on this page.";
+            }
+        </script>
+    </body>
+</html>
