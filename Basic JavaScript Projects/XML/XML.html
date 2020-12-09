@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <body>
+        <p id="XML_Example"></p>
+
+        <script>
+            var XML_Parser, XML_Document;
+
+            //creates text string
+            var movie = "<movie>"+
+            "<title>Jaws</title>"+
+            "<director>Steven Spielberg</director>"+
+            "<composer>John Williams</composer>"+
+            "<year>1975</year>"+
+            "</movie>";
+
+            //creates an XML DOM parser
+            XML_Parser = new DOMParser();
+
+            //creates new XMLDOM using text string 
+            XML_Document = XML_Parser.parseFromString(movie, "text/xml");
+
+            document.getElementById("XML_Example").innerHTML = 
+            XML_Document.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+        </script>
+    </body>
+</html>
