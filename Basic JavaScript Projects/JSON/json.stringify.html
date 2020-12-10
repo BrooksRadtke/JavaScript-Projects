@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <body>
+        <h3>This form creates a JSON string from a JavaScript object; cool!</h3>
+        <p id="stringEmUp"></p>
+        <p id="parseEmOut"></p>
+        <p id="localzOnly"></p>
+        <script>
+            //stringify JS obj
+            var obj = {'name':'Steve','age':'30', 'city':'London'};
+            var myJSON = JSON.stringify(obj);
+            document.getElementById("stringEmUp").innerHTML = myJSON;
+
+            //parsing an JS obj
+            var guy = '{"name":"Steve" ,"age":"30", "city":"London"}';
+            var parseJSON = JSON.parse(guy);
+            document.getElementById("parseEmOut").innerHTML = parseJSON.name + ' is ' +
+            parseJSON.age + " from " + parseJSON.city + ".";
+
+            //Local Storage
+            //set data as a key/value pair to be saved locally on browser
+            localStorage.setItem("Name", "Aramis");
+            //use key *Name to return value
+            document.getElementById("localzOnly").innerHTML = localStorage.getItem("Name");
+        </script>
+    </body>
+</html>

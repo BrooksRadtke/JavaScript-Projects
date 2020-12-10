@@ -22,7 +22,7 @@
     right: 15px;
     border: 3px solid #f1f1f1;
     z-index: 9;
-    animation: popupMove 3s;
+    animation: popupMove 1.5s;
 }
 
 @keyframes popupMove
@@ -73,4 +73,14 @@
 .form-container .btn:hover, .open-button:hover
 {
     opacity: 1;
+}
+
+div.sticky
+{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: blue;
+    padding: 50px;
+    font-size: 20px;
 }
