@@ -20,6 +20,7 @@ function add()
     //takes inputed task and creates a variable of it
     var task = document.getElementById('task').value;
     var todos = get_todos();
+    todos.push(task);
     //converts task to json string
     localStorage.setItem('todo', JSON.stringify(todos));
     document.getElementById("task").value = "";
@@ -45,9 +46,35 @@ function show()
     html += '</ul>';
     //displays task as a list
     document.getElementById('todos').innerHTML = html;
+
+    //tells browser how to display the array after an item is removed
+    var buttons = document.getElementsByClassName('remove');
+    for(var i = 0; i < buttons.length; i++)
+    {
+        buttons[i].addEventListener('click', remove);
+    }
 }
 
 //displays the inputed task when the "add item" button is clicked
 document.getElementById('add').addEventListener('click', add);
 //keeps inputs permanently on screen
 show();
+
+//removes the todo item from the array
+function remove()
+{
+    var id = this.getAttribute('id');
+    var todos = get_todos();
+    todos.splice(id, 1);
+    localStorage.setItem('todo', JSON.stringify(todos));
+    //looks into show() to remove an item from screen
+    show();
+
+    return false;
+}
+
+//step 389, ondblclick() example
+function turnRed()
+{
+    document.getElementById("dblclick").style.color = "red";
+}

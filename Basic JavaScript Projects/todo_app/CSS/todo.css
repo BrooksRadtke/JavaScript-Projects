@@ -44,3 +44,8 @@ footer
     background-color: rgb(104, 101, 101);
     color: #fff;
 }
+
+.remove
+{
+    padding-bottom: 5px;
+}

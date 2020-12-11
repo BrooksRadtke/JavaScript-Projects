@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<!-- Head -->
+    <head>
+        <meta charset="UTF-8">
+        <title>Portfolio Website</title>
+            <link rel="stylesheet" type="text/css" href="CSS/portfolio.css">
+    </head>
+
+<!-- Body -->
+<body class="Background">
+
+    <!-- Navbar -->
+    <div class="Navbar">
+        <a class="active" href="#Home">Home</a>
+        <a href="#Skillset">Skillset</a>
+        <a href="#About">About</a>
+        <a href="#Portfolio">Portfolio</a>
+        <a onclick="openForm()" ondblclick="closeForm()">Contact</a>
+    </div>
+
+    <!-- Home -->
+    <div id="Home">
+        <br> <!-- Breaks inserted to add space between navbar and first heading -->
+        <br>
+
+        <!-- Video -->
+        <video autoplay muted loop id="Network_Video"> <!-- Video will automatically play, muted on loop-->
+            <source src="Media/Network_Video.mp4" type="video/mp4">
+                Sorry, looks like your browser does not support this HTML5 video. <!-- Error Message -->
+        </video>
+    </div>
+
+    <!-- Video Text -->
+    <div class="Video_Text">
+        <h1 style="color:#fff;">Welcome!</h1>
+            <p>
+                <strong>
+                    <center>
+                        <q>Innovation: Imagine the future and fill in the gaps.</q>
+                        <br>-Brian Halligan
+                        <br><br>
+                        Hello! My name is Brooks Radtke, and welcome to my portfolio website!
+                        <br>
+                        Please enjoy and reach out to say hi!
+                    </center>
+                </strong>
+            </p>
+    </div>
+
+    <!-- Slideshow Section -->
+    <div id="Skillset">
+        <div id="Skillset_Background">
+            <div id="Skillset_Container">
+                
+                <div class="mySlides fade">
+                    <div class="Slide_Number">1 / 4</div>
+                    <img class="Slide_Show_Images" src="Media/HTML_CSS_and_JavaScript.jpeg" style="width:100%">
+                        <div class="text">Experienced full-stack software developer<br>in HTML, CSS and JavaScript!</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="Slide_Number">2 / 4</div>
+                    <img class="Slide_Show_Images" src="Media/Python.png" style="width:100%">
+                        <div class="text">Software development in Python</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="Slide_Number">3 / 4</div>
+                    <img class="Slide_Show_Images" src="Media/C_Sharp_and_Dot_NET.png" style="width:100%">
+                        <div class="text">C# and .NET Framework, including ASP.NET and MVC</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="Slide_Number">4 / 4</div>
+                    <img class="Slide_Show_Images" src="Media/SQL_and_Database.jpg" style="width:100%">
+                        <div class="text">Back-end devlopment, including databases and SQL</div>
+                </div>
+
+                <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        <br>
+
+            <div style="text-align:center">
+
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- About section -->
+    <div class="Row" id="About">
+        <div class="Column_2"> <!-- Left column -->
+            <img src="Media/keyboard.jpg" alt="Keyboard">
+        </div>
+
+        <div class="Column_1"> <!-- Right column -->
+            <h2>About:</h2>
+            <p>I'm a full-stack software developer with years of project management experience! When I'm not busy programming, I'm composing orchestral or big-band tunes!
+            <br><br>I'm a proud graduate of The Tech Academy’s Software Developer Boot Camp, and have experience in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more!
+            <br><br>I'm an eccentric software development ethusiast, and I would love to work with you to bring your project to life. Reach out to me with any questions or inquiries in the contact form below! 
+            </p>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div class="Row" id="Portfolio">
+        <div class="Column_1"> <!-- Left column -->
+            <h2>LinkedIn:</h2>
+            <p>You can find me at LinkedIn here:<br>
+            <center><a href="https://www.linkedin.com/in/brooks-radtke/" target="_blank">LinkedIn</a></center></p><br>
+            <hr>
+            <h2>GitHub:</h2>
+            <p>Here are a few projects I worked on:<br>
+            <center><a href="https://github.com/BrooksRadtke?tab=repositories" target="_blank">GitHub</a></center></p>    
+        </div>
+
+        <div class="Column_2"> <!-- Right Column -->
+            <a href="" target="_blank"><img src="Media/GitHub_logo.jpg" alt="GitHub"></a>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="Contact">
+        <button onclick="openForm()" class="Pop_Up_Button"> Contact </button>
+            <div class="form-popup" id="myForm">
+                <form action="https://formspree.io/f/mayldbvp" method="POST" class="form-container">
+                <h1>Contact</h1>
+                    <label for="name"><b>Name:</b></label>
+                        <input type="text" placeholder="Johnny Appleseed" name="name" required>
+                    <label for="phone"><b>Phone:</b></label>
+                        <input type="text" placeholder="1(234) 567-8901" name="phone">    
+                    <label for="email"><b>Email:</b></label>
+                        <input type="text" placeholder="johnny@appleseed.com" name="email" required>
+                    <label for="message"><b>Message:</b></label>
+                        <input type="text" placeholder="Say hello!" name="name" required>
+            
+            <button type="submit" class="btn">Submit</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            <center>&copy 2020</center>
+        </p>
+    </footer>
+
+    <script src="JS/portfolio.js"></script>
+</body>
+
+</html>
