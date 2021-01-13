@@ -2,7 +2,7 @@
 Hello, and welcome to my repository with a few examples of projects I worked on using JavaScript
 ## Projects
 - Calculator
-- Pizza Menu
+- Pizza Menu(https://github.com/BrooksRadtke/JavaScript-Projects/tree/main/Basic%20JavaScript%20Projects/Pizza_Project)
 - Tic-Tac-Toe
 
 ## Calulator
