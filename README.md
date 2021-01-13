@@ -1,5 +1,6 @@
 # JavaScript-Projects
-Hello, and welcome to my repository with a few examples of projects I worked on using JavaScript
+Hello, and welcome to my repository with a few examples of projects I worked during my time at the Tech Academy while using JavaScript:
+___
 ## Projects
 - Calculator
 - Pizza Menu
