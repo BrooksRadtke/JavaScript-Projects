@@ -5,7 +5,7 @@ Hello, and welcome to my repository with a few examples of projects I worked on 
 - Pizza Menu
 - Tic-Tac-Toe
 
-## Calulator
+## [Calulator](https://github.com/BrooksRadtke/JavaScript-Projects/blob/main/Basic%20JavaScript%20Projects/JavaScript_Projects/calculator.html)
 This is a basic 4-function, web-based calculator for users to add, subtract, multiply and divide!
 ## [Pizza Menu](https://github.com/BrooksRadtke/JavaScript-Projects/tree/main/Basic%20JavaScript%20Projects/Pizza_Project)
 This project is an electronic menu where you can choose the size of the pizza and the kind of toppings you like. 
